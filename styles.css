@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.awsli.com.br/2524/2524457/produto/227322001/cr333116r-01-vyplfo0vf1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: coral;
+    color: maroon;
+    text-align: center;
+    padding: 20px;
+    border-radius: 41%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: bisque;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5%;
+}
+
+.dropdown-menu a {
+    padding: 12px 16px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.menu:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: maroon;
+}
+
+.sobre img {
+    width: 55%;
+    height: auto;
+    margin-right: 20px;
+    border: 5px solid coral;
+    border-radius: 1%;
+}
+
+.linha-separacao {
+    border: none; 
+    height: 2px; 
+    background-color: chocolate; 
+    margin: 20px 10; 
+}
+
+.produtos h2 {
+    font-size: 1.5em; 
+    color: orangered; 
+    text-align: center; 
+    margin: 10px 0; 
+    font-weight: bold;  
+    padding-bottom: 5px ; 
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produto {
+    border: 1px solid maroon;
+    padding: 10px;
+    margin: 10px;
+    width: calc(25% - 20px); 
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.produto img:hover {
+    transform: scale(1.1); 
+}
+
+.botao-adicionar {
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    border-radius: 25px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.botao-adicionar:hover {
+    background-color: #218838; 
+}
+
+
+@media (max-width: 768px) {
+    .produto {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .sobre img {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+.sobre h2 {
+    margin-top: 10px;
+}
+.sobre p{
+    margin-top: 5px;
+}
+}
+
+#contato {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid maroon;
+    border-radius: 5px;
+}
+
+#contato h2 {
+    margin-bottom: 15px;
+}
+
+#contato label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contato input,
+#contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid maroon;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+#contato button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contato button:hover {
+    background-color: #218838;
+}
+
+#redes-sociais {
+    margin: 20px;
+    text-align: center;
+}
+
+.icones-redes-sociais a {
+    margin: 0 10px; 
+}
+
+.icones-redes-sociais img {
+    transition: transform 0.2s; 
+}
+
+.icones-redes-sociais img:hover {
+    transform: scale(1.1); 
+}
